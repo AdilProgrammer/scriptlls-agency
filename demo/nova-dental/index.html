@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVA DENTAL | Modern Dental Care</title>
+  <meta name="description" content="Nova Dental is a fictional modern dental clinic concept created by Scriptll's Agency to demonstrate premium healthcare website design." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="NOVA DENTAL | Modern Dental Care" />
+  <meta property="og:description" content="Thoughtful dental care designed around your comfort, your goals, and your long-term oral health. Concept website by Scriptll's Agency." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&h=630&fit=crop" />
+  <link rel="canonical" href="https://novadental.concept" />
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PAGE PROGRESS -->
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand" aria-label="Nova Dental home">
+        <span class="nav-brand-mark">N</span>
+        <span class="nav-brand-text">NOVA DENTAL</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#treatments" class="nav-link">Treatments</a>
+        <a href="#why" class="nav-link">Why Nova</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Patient Experience</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#appointment" class="nav-cta">Book Appointment</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE FULLSCREEN MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <div class="mobile-menu-head">
+        <span class="mobile-menu-brand">NOVA DENTAL</span>
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="mobile-menu-links" aria-label="Mobile navigation">
+        <a href="#treatments" class="mobile-link"><span>01</span> Treatments</a>
+        <a href="#why" class="mobile-link"><span>02</span> Why Nova</a>
+        <a href="#about" class="mobile-link"><span>03</span> About</a>
+        <a href="#experience" class="mobile-link"><span>04</span> Patient Experience</a>
+        <a href="#faq" class="mobile-link"><span>05</span> FAQ</a>
+        <a href="#contact" class="mobile-link"><span>06</span> Contact</a>
+      </nav>
+      <a href="#appointment" class="mobile-menu-cta">Book Appointment</a>
+      <p class="mobile-menu-note">Concept by Scriptll's Agency</p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+        <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-eyebrow">MODERN DENTISTRY &nbsp;•&nbsp; PERSONAL CARE</span>
+          <h1 class="hero-title">
+            <span class="hero-line">YOUR SMILE.</span>
+            <span class="hero-line">YOUR CONFIDENCE.</span>
+            <span class="hero-line hero-line-accent">OUR EXPERTISE.</span>
+          </h1>
+          <p class="hero-sub">
+            Thoughtful dental care designed around your comfort, your goals,
+            and your long-term oral health.
+          </p>
+          <div class="hero-cta">
+            <a href="#appointment" class="btn btn-primary">Book an Appointment</a>
+            <a href="#treatments" class="btn btn-ghost">Explore Treatments</a>
+          </div>
+          <ul class="hero-trust">
+            <li><span class="trust-dot"></span> Modern patient experience</li>
+            <li><span class="trust-dot"></span> Personalized care</li>
+            <li><span class="trust-dot"></span> Convenient appointments</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <!-- HERO IMAGE: replace src with your own dentist-patient image -->
+          <div class="hero-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1000&q=80"
+              alt="Dentist consulting with a patient in a bright modern clinic"
+              class="hero-image"
+              fetchpriority="high"
+            />
+            <div class="hero-card hero-card-1">
+              <span class="hero-card-icon">✦</span>
+              <div>
+                <span class="hero-card-label">Personalized Care</span>
+                <span class="hero-card-value">Built around you</span>
+              </div>
+            </div>
+            <div class="hero-card hero-card-2">
+              <span class="hero-card-icon">◐</span>
+              <div>
+                <span class="hero-card-label">Modern Dentistry</span>
+                <span class="hero-card-value">Calm & considered</span>
+              </div>
+            </div>
+            <div class="hero-card hero-card-3">
+              <span class="hero-card-icon">→</span>
+              <div>
+                <span class="hero-card-label">Easy Booking</span>
+                <span class="hero-card-value">Simple online request</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST BAR ============ -->
+    <section class="trust-bar" aria-label="Brand positioning">
+      <div class="container">
+        <ul class="trust-list">
+          <li>Personalized Care</li>
+          <li>Modern Technology</li>
+          <li>Patient-First Experience</li>
+          <li>Comprehensive Services</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM / REASSURANCE ============ -->
+    <section class="section problem" id="problem">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">A calmer approach</span>
+          <h2 class="section-title">DENTAL CARE SHOULDN'T<br />FEEL INTIMIDATING.</h2>
+          <p class="section-sub">
+            From routine checkups to complete smile transformations, we believe
+            the experience should feel clear, comfortable, and human.
+          </p>
+        </div>
+
+        <div class="concern-grid">
+          <article class="concern-card reveal">
+            <span class="concern-num">01</span>
+            <h3>Not sure what you need?</h3>
+            <p>Clear explanations before treatment. You'll always understand your options.</p>
+          </article>
+          <article class="concern-card reveal">
+            <span class="concern-num">02</span>
+            <h3>Worried about the experience?</h3>
+            <p>A calm, patient-first environment designed to reduce anxiety, not add to it.</p>
+          </article>
+          <article class="concern-card reveal">
+            <span class="concern-num">03</span>
+            <h3>Don't know where to start?</h3>
+            <p>A simple consultation is the first step. No pressure, no assumptions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TREATMENTS ============ -->
+    <section class="section treatments" id="treatments">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Treatments</span>
+          <h2 class="section-title">CARE FOR EVERY<br />STAGE OF YOUR SMILE.</h2>
+          <p class="section-sub">
+            A range of dental services designed around clarity, comfort, and
+            long-term oral health.
+          </p>
+        </div>
+
+        <div class="treatment-grid">
+          <!-- GENERAL -->
+          <article class="treatment-card reveal" data-treatment="general">
+            <div class="treatment-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M24 6C16 6 10 12 10 20c0 8 6 22 14 22s14-14 14-22c0-8-6-14-14-14z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                <path d="M18 18h12M24 12v12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>General Dentistry</h3>
+            <p>Checkups, cleanings, and everyday oral care.</p>
+            <span class="treatment-link">Explore treatment →</span>
+          </article>
+
+          <!-- COSMETIC -->
+          <article class="treatment-card reveal" data-treatment="cosmetic">
+            <div class="treatment-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M24 4l3.5 9.5L37 17l-9.5 3.5L24 30l-3.5-9.5L11 17l9.5-3.5L24 4z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                <path d="M38 30l1.8 4.7L44 36l-4.2 1.3L38 42l-1.8-4.7L32 36l4.2-1.3L38 30z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Cosmetic Dentistry</h3>
+            <p>Smile-focused treatments designed around your goals.</p>
+            <span class="treatment-link">Explore treatment →</span>
+          </article>
+
+          <!-- IMPLANTS -->
+          <article class="treatment-card reveal" data-treatment="implants">
+            <div class="treatment-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M18 8h12l-1 10h-10L18 8z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                <path d="M19 18v10M24 18v16M29 18v10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M14 34h20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Dental Implants</h3>
+            <p>Replacement options for missing teeth.</p>
+            <span class="treatment-link">Explore treatment →</span>
+          </article>
+
+          <!-- ORTHODONTICS -->
+          <article class="treatment-card reveal" data-treatment="orthodontics">
+            <div class="treatment-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="8" y="18" width="32" height="12" rx="3" stroke="currentColor" stroke-width="2.2"/>
+                <path d="M14 18v12M20 18v12M26 18v12M32 18v12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M6 24h36" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Orthodontics</h3>
+            <p>Straightening and alignment solutions.</p>
+            <span class="treatment-link">Explore treatment →</span>
+          </article>
+
+          <!-- WHITENING -->
+          <article class="treatment-card reveal" data-treatment="whitening">
+            <div class="treatment-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M24 8c-6 0-11 5-11 11 0 7 5 17 11 21 6-4 11-14 11-21 0-6-5-11-11-11z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                <path d="M24 14v16M20 22l4 4 4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Teeth Whitening</h3>
+            <p>Professional cosmetic whitening.</p>
+            <span class="treatment-link">Explore treatment →</span>
+          </article>
+
+          <!-- EMERGENCY -->
+          <article class="treatment-card reveal" data-treatment="emergency">
+            <div class="treatment-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.2"/>
+                <path d="M24 16v10M24 30v.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Emergency Dental Care</h3>
+            <p>Support when unexpected dental problems occur.</p>
+            <span class="treatment-link">Explore treatment →</span>
+          </article>
+        </div>
+
+        <p class="treatment-note reveal">
+          Treatment suitability varies by patient and should be determined during a professional consultation.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED TREATMENT ============ -->
+    <section class="section featured" id="featured">
+      <div class="container">
+        <div class="featured-grid">
+          <div class="featured-visual reveal">
+            <!-- FEATURED IMAGE: replace with your own smile/cosmetic image -->
+            <div class="featured-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=900&q=80"
+                alt="Close-up of a confident smile"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="featured-content reveal">
+            <span class="section-label">Cosmetic dentistry</span>
+            <h2 class="featured-title">YOUR SMILE.<br />DESIGNED AROUND YOU.</h2>
+            <p class="featured-copy">
+              Cosmetic dentistry can bring together several treatments to address
+              the appearance of your smile. The right approach depends on your
+              goals, dental health, and professional assessment.
+            </p>
+            <p class="featured-copy muted">
+              No two smiles are the same. Neither should the plan be.
+            </p>
+            <a href="#treatments" class="btn btn-primary">Explore Cosmetic Dentistry</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEFORE / AFTER CONCEPTUAL ============ -->
+    <section class="section ba-section" id="before-after">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Conceptual demonstration</span>
+          <h2 class="section-title">SEE THE DIFFERENCE.</h2>
+          <p class="section-sub">
+            A conceptual UI comparison — not a real clinic redesign.
+          </p>
+        </div>
+
+        <div class="ba-wrap reveal">
+          <div class="ba-slider" id="baSlider">
+            <div class="ba-before">
+              <span class="ba-tag">Typical dental website</span>
+              <div class="ba-before-body">
+                <div class="ba-before-header">Dental Clinic</div>
+                <div class="ba-before-line"></div>
+                <div class="ba-before-line short"></div>
+                <div class="ba-before-line"></div>
+                <div class="ba-before-btn">Learn More</div>
+              </div>
+            </div>
+            <div class="ba-after" id="baAfter">
+              <span class="ba-tag ba-tag-after">Patient-first experience</span>
+              <div class="ba-after-body">
+                <span class="ba-after-eyebrow">MODERN DENTISTRY</span>
+                <h3 class="ba-after-title">Clear answers.<br />Thoughtful care.</h3>
+                <span class="ba-after-btn">Book Appointment</span>
+              </div>
+            </div>
+            <div class="ba-handle" id="baHandle">
+              <div class="ba-handle-line"></div>
+              <div class="ba-handle-knob">↔</div>
+            </div>
+          </div>
+          <p class="ba-note">Conceptual design demonstration — not a real clinic redesign.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY NOVA ============ -->
+    <section class="section why" id="why">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Why Nova</span>
+          <h2 class="section-title">MODERN CARE.<br />HUMAN EXPERIENCE.</h2>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <span class="why-num">01</span>
+            <h3>Clear Communication</h3>
+            <p>Understand your options before making decisions. No surprises, no pressure.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-num">02</span>
+            <h3>Comfort-First Design</h3>
+            <p>A calmer environment and patient-centered experience from the moment you arrive.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-num">03</span>
+            <h3>Modern Technology</h3>
+            <p>A technology-aware approach designed to support accurate, considered care.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-num">04</span>
+            <h3>Personalized Planning</h3>
+            <p>Treatment conversations built around the individual patient, not a template.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PATIENT JOURNEY ============ -->
+    <section class="section journey" id="journey">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Patient journey</span>
+          <h2 class="section-title">A SIMPLE PATH<br />FORWARD.</h2>
+        </div>
+
+        <div class="journey-grid">
+          <article class="journey-step reveal">
+            <span class="journey-num">01</span>
+            <h3>Consult</h3>
+            <p>Tell us what you're looking for.</p>
+          </article>
+          <article class="journey-step reveal">
+            <span class="journey-num">02</span>
+            <h3>Assess</h3>
+            <p>Discuss your dental needs and options with a professional.</p>
+          </article>
+          <article class="journey-step reveal">
+            <span class="journey-num">03</span>
+            <h3>Plan</h3>
+            <p>Create a treatment approach suited to your goals.</p>
+          </article>
+          <article class="journey-step reveal">
+            <span class="journey-num">04</span>
+            <h3>Care</h3>
+            <p>Move forward with your care plan.</p>
+          </article>
+        </div>
+
+        <p class="journey-note reveal">
+          Treatment plans are determined individually by qualified dental professionals.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ PATIENT EXPERIENCE ============ -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Patient experience</span>
+          <h2 class="section-title">FROM FIRST CLICK<br />TO FIRST VISIT.</h2>
+        </div>
+
+        <div class="experience-track reveal">
+          <div class="exp-step">
+            <span class="exp-dot"></span>
+            <span class="exp-label">Website</span>
+          </div>
+          <div class="exp-step">
+            <span class="exp-dot"></span>
+            <span class="exp-label">Appointment Request</span>
+          </div>
+          <div class="exp-step">
+            <span class="exp-dot"></span>
+            <span class="exp-label">Consultation</span>
+          </div>
+          <div class="exp-step">
+            <span class="exp-dot"></span>
+            <span class="exp-label">Treatment Plan</span>
+          </div>
+          <div class="exp-step">
+            <span class="exp-dot"></span>
+            <span class="exp-label">Ongoing Care</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLINIC INTERIOR ============ -->
+    <section class="interior-banner" id="interior">
+      <div class="interior-bg">
+        <!-- CLINIC IMAGE: replace with your own modern dental clinic image -->
+        <img
+          src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=2000&q=80"
+          alt="Bright modern dental clinic interior"
+          loading="lazy"
+        />
+        <div class="interior-overlay"></div>
+      </div>
+      <div class="interior-content">
+        <h2 class="interior-title">A CALMER WAY TO<br />VISIT THE DENTIST.</h2>
+        <p class="interior-copy">
+          Every detail of the experience is designed to feel clear, comfortable, and considered.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content reveal">
+            <span class="section-label">About Nova</span>
+            <h2 class="section-title">PEOPLE FIRST.<br />ALWAYS.</h2>
+            <p class="about-copy">
+              Nova Dental was imagined around a simple principle: excellent care
+              should be paired with an excellent patient experience.
+            </p>
+            <p class="about-copy muted">
+              That means clear communication, transparent treatment conversations,
+              a modern environment, and care designed around you — not the other way around.
+            </p>
+            <div class="about-points">
+              <div class="about-point">
+                <span class="about-point-mark">✓</span>
+                <span>Patient communication</span>
+              </div>
+              <div class="about-point">
+                <span class="about-point-mark">✓</span>
+                <span>Modern environment</span>
+              </div>
+              <div class="about-point">
+                <span class="about-point-mark">✓</span>
+                <span>Transparent treatment conversations</span>
+              </div>
+              <div class="about-point">
+                <span class="about-point-mark">✓</span>
+                <span>Personalized care</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual reveal">
+            <!-- ABOUT IMAGE: replace with your own clinic detail image -->
+            <div class="about-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=900&q=80"
+                alt="Dental clinic detail with modern equipment"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="section team" id="team">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Sample team profiles — concept project</span>
+          <h2 class="section-title">MEET THE TEAM.</h2>
+          <p class="section-sub">
+            Fictional profiles created to demonstrate how a modern dental team
+            section could look and feel.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="team-image">
+              <!-- TEAM IMAGE: replace with your own portrait -->
+              <img
+                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80"
+                alt="Portrait of Dr. Alex Morgan, fictional concept profile"
+                loading="lazy"
+              />
+            </div>
+            <div class="team-info">
+              <h3>Dr. Alex Morgan</h3>
+              <p>General Dentistry</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-image">
+              <!-- TEAM IMAGE: replace with your own portrait -->
+              <img
+                src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600&q=80"
+                alt="Portrait of Dr. Maya Patel, fictional concept profile"
+                loading="lazy"
+              />
+            </div>
+            <div class="team-info">
+              <h3>Dr. Maya Patel</h3>
+              <p>Cosmetic Dentistry</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-image">
+              <!-- TEAM IMAGE: replace with your own portrait -->
+              <img
+                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&q=80"
+                alt="Portrait of Dr. Daniel Reed, fictional concept profile"
+                loading="lazy"
+              />
+            </div>
+            <div class="team-info">
+              <h3>Dr. Daniel Reed</h3>
+              <p>Orthodontics</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="team-note reveal">
+          Fictional team profiles for demonstration purposes only. No real doctors, credentials, or clinic affiliations are represented.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ WHAT MATTERS TO PATIENTS ============ -->
+    <section class="section values" id="values">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">What matters</span>
+          <h2 class="section-title">WHAT MATTERS<br />TO PATIENTS.</h2>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card reveal">
+            <span class="value-mark">"</span>
+            <h3>Clear answers.</h3>
+            <p>You should always understand your options before deciding.</p>
+          </div>
+          <div class="value-card reveal">
+            <span class="value-mark">"</span>
+            <h3>Comfortable experience.</h3>
+            <p>A calmer environment makes a real difference to how care feels.</p>
+          </div>
+          <div class="value-card reveal">
+            <span class="value-mark">"</span>
+            <h3>Care that feels personal.</h3>
+            <p>Your goals, your comfort, your long-term health.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EMERGENCY CTA ============ -->
+    <section class="section emergency" id="emergency">
+      <div class="container">
+        <div class="emergency-card reveal">
+          <div class="emergency-content">
+            <span class="section-label">Urgent care</span>
+            <h2 class="emergency-title">NEED DENTAL CARE SOONER?</h2>
+            <p class="emergency-copy">
+              If you're experiencing a dental problem that needs prompt attention,
+              contact the clinic directly to discuss the appropriate next step.
+            </p>
+          </div>
+          <div class="emergency-actions">
+            <a href="tel:+000000000000" class="btn btn-primary">Call the Clinic</a>
+            <span class="emergency-phone">+00 000 000 000</span>
+            <span class="emergency-note">Concept placeholder phone number.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">QUESTIONS,<br />ANSWERED.</h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>How do I book an appointment?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Use the online appointment form or contact the clinic. Our team will follow up to confirm a suitable time.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>What should I bring to my first visit?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Bring identification and any relevant dental or medical information. It's always a good idea to confirm specific requirements with the clinic before your visit.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Do you accept new patients?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Nova Dental is a fictional concept clinic. In a real clinic website, this section would communicate current patient availability.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Do you offer cosmetic dentistry?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Yes, the concept includes cosmetic treatment services. Suitability always depends on individual assessment by a qualified professional.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>How much does treatment cost?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Costs vary depending on the treatment and the assessment. A consultation is the best way to understand what applies to your situation.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Do you offer payment plans?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>In a real clinic website, this section would describe payment options clearly. This is a concept project, so no real policy is represented.</p>
+            </div>
+          </div>
+
+          <div class="faq-item faq-disclosure">
+            <button class="faq-q" aria-expanded="false">
+              <span>Is Nova Dental a real clinic?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>No. Nova Dental is a fictional concept website created by Scriptll's Agency to demonstrate dental website design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPOINTMENT ============ -->
+    <section class="section appointment" id="appointment">
+      <div class="container">
+        <div class="appointment-grid">
+          <div class="appointment-content reveal">
+            <span class="section-label">Appointments</span>
+            <h2 class="section-title">LET'S TALK<br />ABOUT YOUR SMILE.</h2>
+            <p class="appointment-copy">
+              Tell us what you're looking for and take the first step toward a
+              more informed dental care experience.
+            </p>
+            <div class="appointment-points">
+              <div class="appointment-point">
+                <span class="appointment-point-mark">✦</span>
+                <span>No pressure, no assumptions</span>
+              </div>
+              <div class="appointment-point">
+                <span class="appointment-point-mark">✦</span>
+                <span>Clear next steps</span>
+              </div>
+              <div class="appointment-point">
+                <span class="appointment-point-mark">✦</span>
+                <span>Not sure? We'll help you figure out the right starting point.</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="appointment-form reveal" id="appointmentForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="app-first">First Name</label>
+                <input type="text" id="app-first" name="firstName" required placeholder="First name" />
+              </div>
+              <div class="form-group">
+                <label for="app-last">Last Name</label>
+                <input type="text" id="app-last" name="lastName" required placeholder="Last name" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="app-email">Email</label>
+                <input type="email" id="app-email" name="email" required placeholder="you@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="app-phone">Phone</label>
+                <input type="tel" id="app-phone" name="phone" placeholder="+00 000 000 000" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="app-treatment">Treatment Interest</label>
+                <select id="app-treatment" name="treatment">
+                  <option value="">Select...</option>
+                  <option>General Dentistry</option>
+                  <option>Cosmetic Dentistry</option>
+                  <option>Dental Implants</option>
+                  <option>Orthodontics</option>
+                  <option>Teeth Whitening</option>
+                  <option>Emergency Care</option>
+                  <option>Not Sure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="app-date">Preferred Date</label>
+                <input type="date" id="app-date" name="date" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="app-time">Preferred Time</label>
+                <select id="app-time" name="time">
+                  <option value="">Select...</option>
+                  <option>Morning (8:00 – 12:00)</option>
+                  <option>Afternoon (12:00 – 4:00)</option>
+                  <option>Late Afternoon (4:00 – 6:00)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="app-message">Message</label>
+              <textarea id="app-message" name="message" rows="3" placeholder="Anything you'd like us to know?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="appSubmit">Request an Appointment</button>
+            <p class="form-note">Demo booking experience — no appointment is actually submitted.</p>
+
+            <div class="appointment-success" id="appointmentSuccess" role="status" aria-live="polite">
+              <span class="appointment-success-mark">✓</span>
+              <h3>Request received.</h3>
+              <p>Thanks. This is a demonstration booking experience created by Scriptll's Agency.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOCATION ============ -->
+    <section class="section location" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Location</span>
+          <h2 class="section-title">VISIT NOVA.</h2>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-content reveal">
+            <address class="location-address">
+              <span class="location-brand">NOVA DENTAL</span>
+              <span>100 Aurora Avenue</span>
+              <span>Central District</span>
+              <span>Karachi, Pakistan</span>
+            </address>
+            <p class="location-note">Concept location — demonstration only.</p>
+
+            <div class="location-hours">
+              <h3 class="location-hours-title">Opening Hours</h3>
+              <ul class="hours-list">
+                <li><span>Monday – Friday</span><span>8:00 AM – 6:00 PM</span></li>
+                <li><span>Saturday</span><span>9:00 AM – 2:00 PM</span></li>
+                <li class="hours-closed"><span>Sunday</span><span>Closed</span></li>
+              </ul>
+            </div>
+
+            <div class="location-actions">
+              <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+              <a href="tel:+000000000000" class="btn btn-ghost">Call the Clinic</a>
+            </div>
+          </div>
+
+          <div class="location-map reveal">
+            <div class="map-placeholder" aria-label="Stylized map placeholder">
+              <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect width="400" height="400" fill="#F7F9F8"/>
+                <g stroke="#D9E2EC" stroke-width="1">
+                  <line x1="0" y1="80" x2="400" y2="80"/>
+                  <line x1="0" y1="160" x2="400" y2="160"/>
+                  <line x1="0" y1="240" x2="400" y2="240"/>
+                  <line x1="0" y1="320" x2="400" y2="320"/>
+                  <line x1="80" y1="0" x2="80" y2="400"/>
+                  <line x1="160" y1="0" x2="160" y2="400"/>
+                  <line x1="240" y1="0" x2="240" y2="400"/>
+                  <line x1="320" y1="0" x2="320" y2="400"/>
+                </g>
+                <circle cx="200" cy="200" r="60" fill="rgba(47,128,237,0.08)"/>
+                <circle cx="200" cy="200" r="8" fill="#2F80ED"/>
+                <circle cx="200" cy="200" r="18" fill="none" stroke="#2F80ED" stroke-width="1.5" opacity="0.5"/>
+                <text x="200" y="270" text-anchor="middle" fill="#102A43" font-family="Inter, sans-serif" font-size="12" letter-spacing="2">NOVA DENTAL</text>
+                <text x="200" y="290" text-anchor="middle" fill="#627D98" font-family="Inter, sans-serif" font-size="10" letter-spacing="1.5">CONCEPT LOCATION</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AGENCY CASE STUDY ============ -->
+    <section class="section agency-case" id="agency-case">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Scriptll's Agency — Concept case study</span>
+          <h2 class="section-title">DESIGNED FOR<br />PATIENT CONFIDENCE.</h2>
+        </div>
+
+        <div class="agency-case-grid">
+          <article class="agency-case-card reveal">
+            <span class="agency-case-num">01</span>
+            <h3>The Challenge</h3>
+            <p>Dental websites need to communicate expertise without making patients feel overwhelmed.</p>
+          </article>
+          <article class="agency-case-card reveal">
+            <span class="agency-case-num">02</span>
+            <h3>The Strategy</h3>
+            <p>Build trust first, explain treatments clearly, and make booking frictionless.</p>
+          </article>
+          <article class="agency-case-card reveal">
+            <span class="agency-case-num">03</span>
+            <h3>The Design</h3>
+            <p>Warm clinical minimalism combined with premium editorial typography.</p>
+          </article>
+          <article class="agency-case-card reveal">
+            <span class="agency-case-num">04</span>
+            <h3>The Experience</h3>
+            <p>Guide the visitor from uncertainty to a clear next step.</p>
+          </article>
+        </div>
+
+        <div class="agency-credit reveal">
+          <p>Website concept by <a href="#" class="agency-credit-link">Scriptll's Agency</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <span class="footer-brand">NOVA DENTAL</span>
+        <p class="footer-tagline">CONFIDENT SMILES START HERE.</p>
+      </div>
+
+      <div class="footer-grid">
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#treatments">Treatments</a>
+          <a href="#why">Why Nova</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a href="#appointment">Book Appointment</a>
+        </nav>
+
+        <div class="footer-social" aria-label="Social media">
+          <a href="#" rel="noopener">Instagram</a>
+          <a href="#" rel="noopener">Facebook</a>
+          <a href="#" rel="noopener">LinkedIn</a>
+        </div>
+
+        <div class="footer-cta">
+          <a href="#appointment" class="footer-cta-btn">Book Appointment</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-disclosure">
+          Nova Dental is a fictional dental clinic concept created by Scriptll's Agency.
+        </p>
+        <p class="footer-copy">© 2026 NOVA DENTAL — CONCEPT PROJECT</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY CTA -->
+  <div class="mobile-sticky" id="mobileSticky" aria-hidden="true">
+    <a href="tel:+000000000000" class="mobile-sticky-btn">Call</a>
+    <a href="#appointment" class="mobile-sticky-btn mobile-sticky-primary">Book Appointment</a>
+  </div>
+
+  <!-- ============ TREATMENT MODAL ============ -->
+  <div class="modal" id="treatmentModal" role="dialog" aria-modal="true" aria-labelledby="treatmentModalTitle" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <span class="modal-brand" id="treatmentModalTitle">TREATMENT</span>
+        <button class="modal-close" id="treatmentModalClose" aria-label="Close treatment details">✕</button>
+      </div>
+      <div class="modal-body" id="treatmentModalBody">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMBER & OAK | Fire-Driven Dining</title>
+  <meta name="description" content="EMBER & OAK is a fictional fire-driven dining concept created by Scriptll's Agency to demonstrate premium restaurant web design." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="EMBER & OAK | Fire-Driven Dining" />
+  <meta property="og:description" content="An intimate fire-driven dining experience built around bold ingredients, live flame, and unapologetic flavor. Concept website by Scriptll's Agency." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&h=630&fit=crop" />
+  <link rel="canonical" href="https://emberandoak.concept" />
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-brand">EMBER &amp; OAK</span>
+      <div class="loader-line"><span></span></div>
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR (desktop only) -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor-label" id="cursorLabel"></span>
+  </div>
+
+  <!-- PAGE PROGRESS -->
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand" aria-label="Ember and Oak home">EMBER &amp; OAK</a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#story" class="nav-link">Our Story</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#reserve" class="nav-reserve">Reserve</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE FULLSCREEN MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <span class="mobile-menu-brand">EMBER &amp; OAK</span>
+      <nav class="mobile-menu-links" aria-label="Mobile navigation">
+        <a href="#menu" class="mobile-link"><span>01</span> Menu</a>
+        <a href="#story" class="mobile-link"><span>02</span> Our Story</a>
+        <a href="#experience" class="mobile-link"><span>03</span> Experience</a>
+        <a href="#gallery" class="mobile-link"><span>04</span> Gallery</a>
+        <a href="#contact" class="mobile-link"><span>05</span> Contact</a>
+      </nav>
+      <a href="#reserve" class="mobile-reserve">Reserve a Table</a>
+      <span class="mobile-menu-note">Concept by Scriptll's Agency</span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <!-- HERO IMAGE: replace src with your own cinematic fire/restaurant image -->
+        <img
+          src="https://images.unsplash.com/photo-1544025162-d76694265947?w=2000&q=80"
+          alt="Open flame grilling in a dark restaurant kitchen"
+          class="hero-img"
+          fetchpriority="high"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-top">
+          <span class="hero-eyebrow">EST. 2026 &nbsp;•&nbsp; FIRE-DRIVEN DINING</span>
+        </div>
+
+        <div class="hero-center">
+          <h1 class="hero-title">
+            <span class="hero-line"><span class="hero-line-inner">FIRE. FLAVOR.</span></span>
+            <span class="hero-line"><span class="hero-line-inner">NO APOLOGIES.</span></span>
+          </h1>
+          <p class="hero-sub">
+            An intimate fire-driven dining experience built around bold ingredients,
+            live flame, and unapologetic flavor.
+          </p>
+          <div class="hero-cta">
+            <a href="#reserve" class="btn btn-primary" data-cursor="reserve">Reserve a Table</a>
+            <a href="#menu" class="btn btn-ghost">Explore the Menu</a>
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <div class="hero-bottom-left">
+            <span class="hero-meta-label">Fire-Driven Dining</span>
+            <span class="hero-meta-value">Downtown • Karachi</span>
+          </div>
+          <a href="#intro" class="hero-scroll" aria-label="Scroll to explore">
+            <span>Scroll to explore</span>
+            <span class="hero-scroll-line"><span></span></span>
+          </a>
+          <div class="hero-bottom-right">
+            <span class="hero-meta-label">Reservations</span>
+            <span class="hero-meta-value">Tue – Sun</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTRO / FIRE IS OUR FIRST INGREDIENT ============ -->
+    <section class="section intro" id="intro">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-left reveal">
+            <span class="section-label">01 — Philosophy</span>
+            <h2 class="intro-title">FIRE IS OUR<br />FIRST INGREDIENT.</h2>
+            <div class="intro-rule"></div>
+            <p class="intro-copy">
+              We cook over flame because it changes everything.
+              Texture. Aroma. Depth. The moment between raw and ready.
+            </p>
+            <p class="intro-copy muted">
+              Every plate that leaves our kitchen has passed through fire.
+              No shortcuts. No apologies.
+            </p>
+          </div>
+          <div class="intro-right reveal">
+            <!-- INTRO IMAGE: replace with your own close-up food/fire image -->
+            <div class="intro-image">
+              <img
+                src="https://images.unsplash.com/photo-1558030006-450675393462?w=900&q=80"
+                alt="Close-up of charred meat over open flame"
+                loading="lazy"
+              />
+              <span class="image-caption">Ember-grilled, always.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE DISHES — FROM THE FIRE ============ -->
+    <section class="section dishes" id="dishes">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">02 — Signature</span>
+          <h2 class="section-title">FROM THE FIRE</h2>
+          <p class="section-sub">Four plates that define the room. Concept menu for demonstration purposes.</p>
+        </div>
+
+        <div class="dishes-grid">
+          <!-- DISH 1 -->
+          <article class="dish-card reveal" data-dish="ribeye">
+            <div class="dish-image">
+              <!-- DISH IMAGE: replace with your own ribeye image -->
+              <img
+                src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800&q=80"
+                alt="Ember-grilled ribeye with bone marrow"
+                loading="lazy"
+              />
+              <span class="dish-num">01</span>
+            </div>
+            <div class="dish-info">
+              <h3>Ember-Grilled Ribeye</h3>
+              <p class="dish-desc">Smoked bone marrow • charred shallot • ember jus</p>
+              <span class="dish-line"></span>
+            </div>
+          </article>
+
+          <!-- DISH 2 -->
+          <article class="dish-card reveal" data-dish="octopus">
+            <div class="dish-image">
+              <!-- DISH IMAGE: replace with your own octopus image -->
+              <img
+                src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=800&q=80"
+                alt="Coal-roasted octopus with preserved lemon"
+                loading="lazy"
+              />
+              <span class="dish-num">02</span>
+            </div>
+            <div class="dish-info">
+              <h3>Coal-Roasted Octopus</h3>
+              <p class="dish-desc">Preserved lemon • smoked paprika • herb oil</p>
+              <span class="dish-line"></span>
+            </div>
+          </article>
+
+          <!-- DISH 3 -->
+          <article class="dish-card reveal" data-dish="carrots">
+            <div class="dish-image">
+              <!-- DISH IMAGE: replace with your own roasted carrots image -->
+              <img
+                src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=800&q=80"
+                alt="Fire-roasted carrots with tahini and pistachio"
+                loading="lazy"
+              />
+              <span class="dish-num">03</span>
+            </div>
+            <div class="dish-info">
+              <h3>Fire-Roasted Carrots</h3>
+              <p class="dish-desc">Whipped tahini • pistachio • brown butter</p>
+              <span class="dish-line"></span>
+            </div>
+          </article>
+
+          <!-- DISH 4 -->
+          <article class="dish-card reveal" data-dish="cheesecake">
+            <div class="dish-image">
+              <!-- DISH IMAGE: replace with your own basque cheesecake image -->
+              <img
+                src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&q=80"
+                alt="Burnt Basque cheesecake with blackberry"
+                loading="lazy"
+              />
+              <span class="dish-num">04</span>
+            </div>
+            <div class="dish-info">
+              <h3>Burnt Basque Cheesecake</h3>
+              <p class="dish-desc">Blackberry • vanilla • sea salt</p>
+              <span class="dish-line"></span>
+            </div>
+          </article>
+        </div>
+
+        <div class="dishes-cta reveal">
+          <a href="#reserve" class="btn btn-primary">Make It a Night</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE MENU ============ -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">03 — The Menu</span>
+          <h2 class="section-title">THE MENU</h2>
+          <p class="section-sub">Built around flame, seasonality, and ingredients worth talking about.</p>
+        </div>
+
+        <div class="menu-preview reveal">
+          <div class="menu-category">
+            <h3 class="menu-cat-title">From the Fire</h3>
+            <ul class="menu-list">
+              <li>
+                <span class="menu-item-name">Ember-Grilled Ribeye</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$48</span>
+                <span class="menu-item-desc">Bone marrow • charred shallot • ember jus</span>
+              </li>
+              <li>
+                <span class="menu-item-name">Coal-Roasted Octopus</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$32</span>
+                <span class="menu-item-desc">Preserved lemon • smoked paprika • herb oil</span>
+              </li>
+              <li>
+                <span class="menu-item-name">Fire-Roasted Carrots</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$18</span>
+                <span class="menu-item-desc">Whipped tahini • pistachio • brown butter</span>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-category">
+            <h3 class="menu-cat-title">Dessert</h3>
+            <ul class="menu-list">
+              <li>
+                <span class="menu-item-name">Burnt Basque Cheesecake</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$14</span>
+                <span class="menu-item-desc">Blackberry • vanilla • sea salt</span>
+              </li>
+              <li>
+                <span class="menu-item-name">Smoked Chocolate Tart</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$13</span>
+                <span class="menu-item-desc">Cherry • crème fraîche</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu-cta reveal">
+          <button class="btn btn-primary" id="openMenuModal">View Full Menu</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OUR STORY ============ -->
+    <section class="section story" id="story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image reveal">
+            <!-- STORY IMAGE: replace with your own chef/fire/dining image -->
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1000&q=80"
+              alt="Chef working over open fire in a dark kitchen"
+              loading="lazy"
+            />
+            <span class="image-caption">Built around fire.</span>
+          </div>
+          <div class="story-content reveal">
+            <span class="section-label">04 — Our Story</span>
+            <h2 class="section-title">BUILT AROUND FIRE.</h2>
+            <p class="story-copy">
+              EMBER &amp; OAK began with a simple obsession: what happens when
+              exceptional ingredients meet real fire?
+            </p>
+            <p class="story-copy muted">
+              We built a kitchen around open flame, a dining room around
+              intimacy, and a menu around the ingredients that deserve both.
+            </p>
+            <p class="story-copy muted">
+              This is not a restaurant about noise. It's about heat, patience,
+              and the quiet moment before the first bite.
+            </p>
+            <a href="#experience" class="story-link">Discover the experience →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE EXPERIENCE ============ -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">05 — The Experience</span>
+          <h2 class="section-title">NOT JUST DINNER.</h2>
+          <p class="section-sub">Four elements designed to hold the evening together.</p>
+        </div>
+
+        <div class="experience-grid">
+          <div class="exp-card reveal">
+            <span class="exp-num">01</span>
+            <h3>The Fire</h3>
+            <p>Open-fire cooking at the heart of the kitchen. Every dish passes through flame.</p>
+          </div>
+          <div class="exp-card reveal">
+            <span class="exp-num">02</span>
+            <h3>The Room</h3>
+            <p>Warm lighting, dark textures, intimate tables. Designed to slow the evening down.</p>
+          </div>
+          <div class="exp-card reveal">
+            <span class="exp-num">03</span>
+            <h3>The Table</h3>
+            <p>Food designed to be shared, discussed, and remembered. Not rushed.</p>
+          </div>
+          <div class="exp-card reveal">
+            <span class="exp-num">04</span>
+            <h3>The Night</h3>
+            <p>Cocktails, music, and atmosphere built to keep the evening moving.</p>
+          </div>
+        </div>
+
+        <div class="exp-cta reveal">
+          <a href="#reserve" class="btn btn-primary">Book the Experience</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTERIOR / PARALLAX BANNER ============ -->
+    <section class="interior-banner" id="interior">
+      <div class="interior-bg">
+        <!-- INTERIOR IMAGE: replace with your own dining room image -->
+        <img
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=2000&q=80"
+          alt="Warmly lit restaurant dining room with dark textures"
+          loading="lazy"
+        />
+        <div class="interior-overlay"></div>
+      </div>
+      <div class="interior-content">
+        <h2 class="interior-title">
+          <span>COME FOR THE FIRE.</span>
+          <span>STAY FOR THE NIGHT.</span>
+        </h2>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">06 — Gallery</span>
+          <h2 class="section-title">THE ROOM, THE FIRE, THE PLATES.</h2>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- GALLERY IMAGES: replace each src with your own photography -->
+          <figure class="gallery-item gallery-tall reveal" data-index="0">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1000&q=80" alt="Open flame grilling" loading="lazy" />
+            <figcaption><span>Fire</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-index="1">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800&q=80" alt="Grilled ribeye dish" loading="lazy" />
+            <figcaption><span>Ribeye</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-index="2">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=800&q=80" alt="Roasted octopus plate" loading="lazy" />
+            <figcaption><span>Octopus</span></figcaption>
+          </figure>
+          <figure class="gallery-item gallery-wide reveal" data-index="3">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&q=80" alt="Intimate dining room" loading="lazy" />
+            <figcaption><span>The Room</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-index="4">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Chef plating in dark kitchen" loading="lazy" />
+            <figcaption><span>The Kitchen</span></figcaption>
+          </figure>
+          <figure class="gallery-item gallery-tall reveal" data-index="5">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=1000&q=80" alt="Cocktail on a dark bar" loading="lazy" />
+            <figcaption><span>Cocktails</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-index="6">
+            <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=800&q=80" alt="Fire-roasted carrots" loading="lazy" />
+            <figcaption><span>Vegetables</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-index="7">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&q=80" alt="Basque cheesecake dessert" loading="lazy" />
+            <figcaption><span>Dessert</span></figcaption>
+          </figure>
+          <figure class="gallery-item gallery-wide reveal" data-index="8">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1400&q=80" alt="Warm restaurant interior detail" loading="lazy" />
+            <figcaption><span>Details</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">07 — Questions</span>
+          <h2 class="section-title">GOOD TO KNOW.</h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Do I need a reservation?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>We recommend reserving in advance, especially Thursday through Saturday. Walk-ins are welcome when space allows.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>What is the dress code?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Smart casual. No formal dress code — we care more about the evening than the outfit.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Do you accommodate dietary restrictions?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Yes. Please note any restrictions in your reservation and our kitchen will accommodate where possible.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Is the menu seasonal?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>The menu evolves with the seasons. Certain signature dishes remain year-round.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Do you offer private dining?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Yes. A limited number of private events are available. Please contact us for details.</p>
+            </div>
+          </div>
+          <div class="faq-item faq-disclosure">
+            <button class="faq-q" aria-expanded="false">
+              <span>Is Ember &amp; Oak a real restaurant?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>No. EMBER &amp; OAK is a fictional restaurant concept created by Scriptll's Agency as a demonstration of our restaurant web design capabilities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESERVATION ============ -->
+    <section class="section reserve-section" id="reserve">
+      <div class="container">
+        <div class="reserve-grid">
+          <div class="reserve-content reveal">
+            <span class="section-label">08 — Reservations</span>
+            <h2 class="section-title">YOUR TABLE IS WAITING.</h2>
+            <p class="reserve-sub">Make an evening of it.</p>
+            <div class="reserve-info">
+              <div class="reserve-info-item">
+                <span class="reserve-info-label">Hours</span>
+                <span class="reserve-info-value">Tue – Sun • 5:30 PM</span>
+              </div>
+              <div class="reserve-info-item">
+                <span class="reserve-info-label">Location</span>
+                <span class="reserve-info-value">21 Mercer Lane, Downtown</span>
+              </div>
+              <div class="reserve-info-item">
+                <span class="reserve-info-label">Note</span>
+                <span class="reserve-info-value">Fictional concept address</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="reserve-form reveal" id="reserveForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-date">Date</label>
+                <input type="date" id="res-date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="res-time">Time</label>
+                <select id="res-time" name="time" required>
+                  <option value="">Select</option>
+                  <option>5:30 PM</option>
+                  <option>6:00 PM</option>
+                  <option>6:30 PM</option>
+                  <option>7:00 PM</option>
+                  <option>7:30 PM</option>
+                  <option>8:00 PM</option>
+                  <option>8:30 PM</option>
+                  <option>9:00 PM</option>
+                  <option>9:30 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-guests">Guests</label>
+                <select id="res-guests" name="guests" required>
+                  <option value="">Select</option>
+                  <option>1</option><option>2</option><option>3</option>
+                  <option>4</option><option>5</option><option>6</option>
+                  <option>7</option><option>8+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="res-name">Name</label>
+                <input type="text" id="res-name" name="name" required placeholder="Your name" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-email">Email</label>
+                <input type="email" id="res-email" name="email" required placeholder="you@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="res-phone">Phone</label>
+                <input type="tel" id="res-phone" name="phone" placeholder="+92 300 0000000" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="res-request">Special Request</label>
+              <textarea id="res-request" name="request" rows="3" placeholder="Allergies, occasions, seating preferences..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="reserveSubmit">Request a Table</button>
+            <p class="form-note">Demo interaction — no reservation is actually submitted.</p>
+
+            <div class="reserve-success" id="reserveSuccess" role="status" aria-live="polite">
+              <span class="reserve-success-mark">✓</span>
+              <h3>Request received.</h3>
+              <p>Thanks — this is a concept reservation experience created for demonstration.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOCATION / FIND US ============ -->
+    <section class="section location-section" id="contact">
+      <div class="container">
+        <div class="location-grid">
+          <div class="location-content reveal">
+            <span class="section-label">09 — Find Us</span>
+            <h2 class="section-title">FIND US</h2>
+            <address class="location-address">
+              <span class="location-brand">EMBER &amp; OAK</span>
+              <span>21 Mercer Lane</span>
+              <span>Downtown</span>
+              <span>Karachi, Pakistan</span>
+            </address>
+            <p class="location-note">Fictional concept address — not a real location.</p>
+
+            <div class="location-hours">
+              <h3 class="location-hours-title">Opening Hours</h3>
+              <ul class="hours-list">
+                <li><span>Tuesday – Thursday</span><span>5:30 PM – 11:00 PM</span></li>
+                <li><span>Friday – Saturday</span><span>5:30 PM – 12:00 AM</span></li>
+                <li><span>Sunday</span><span>5:30 PM – 10:00 PM</span></li>
+                <li class="hours-closed"><span>Monday</span><span>Closed</span></li>
+              </ul>
+            </div>
+
+            <div class="location-actions">
+              <a href="#reserve" class="btn btn-primary">Reserve a Table</a>
+              <a href="tel:+920000000000" class="btn btn-ghost">Call</a>
+            </div>
+          </div>
+
+          <div class="location-map reveal">
+            <!-- Stylized map placeholder — replace with real embed if desired -->
+            <div class="map-placeholder" aria-label="Stylized map placeholder">
+              <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect width="400" height="400" fill="#151310"/>
+                <g stroke="rgba(242,235,221,0.08)" stroke-width="1">
+                  <line x1="0" y1="80" x2="400" y2="80"/>
+                  <line x1="0" y1="160" x2="400" y2="160"/>
+                  <line x1="0" y1="240" x2="400" y2="240"/>
+                  <line x1="0" y1="320" x2="400" y2="320"/>
+                  <line x1="80" y1="0" x2="80" y2="400"/>
+                  <line x1="160" y1="0" x2="160" y2="400"/>
+                  <line x1="240" y1="0" x2="240" y2="400"/>
+                  <line x1="320" y1="0" x2="320" y2="400"/>
+                </g>
+                <circle cx="200" cy="200" r="60" fill="rgba(201,106,50,0.12)"/>
+                <circle cx="200" cy="200" r="8" fill="#C96A32"/>
+                <circle cx="200" cy="200" r="18" fill="none" stroke="#C96A32" stroke-width="1.5" opacity="0.5"/>
+                <text x="200" y="270" text-anchor="middle" fill="#F2EBDD" font-family="Inter, sans-serif" font-size="12" letter-spacing="2">EMBER &amp; OAK</text>
+                <text x="200" y="290" text-anchor="middle" fill="#A8A095" font-family="Inter, sans-serif" font-size="10" letter-spacing="1.5">CONCEPT LOCATION</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY THIS WEBSITE WORKS (CASE STUDY LAYER) ============ -->
+    <section class="section case-section" id="case">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">A note from Scriptll's Agency</span>
+          <h2 class="section-title">DESIGNED AROUND THE GUEST.</h2>
+        </div>
+
+        <div class="case-grid">
+          <div class="case-card reveal">
+            <h3>Clear Reservation Paths</h3>
+            <p>Every section leads back to a single, obvious action: reserving a table.</p>
+          </div>
+          <div class="case-card reveal">
+            <h3>Mobile-First Experience</h3>
+            <p>The site is built for the guest who finds you on their phone, in the moment.</p>
+          </div>
+          <div class="case-card reveal">
+            <h3>Visual Storytelling</h3>
+            <p>Atmosphere first, food second, information last. The feeling sells the room.</p>
+          </div>
+          <div class="case-card reveal">
+            <h3>Menu Discovery</h3>
+            <p>The menu is presented as an editorial experience, not a PDF or a list.</p>
+          </div>
+          <div class="case-card reveal">
+            <h3>Location Clarity</h3>
+            <p>Address, hours, and contact information are always within one scroll.</p>
+          </div>
+          <div class="case-card reveal">
+            <h3>Strong Brand Identity</h3>
+            <p>Typography, colour, and motion work together to feel like one restaurant.</p>
+          </div>
+        </div>
+
+        <div class="case-note reveal">
+          <p>Concept website created by Scriptll's Agency to demonstrate premium restaurant web design.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEFORE / AFTER DEMO ============ -->
+    <section class="section ba-section" id="before-after">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Conceptual Redesign</span>
+          <h2 class="section-title">BUILT TO MAKE THE FIRST IMPRESSION COUNT.</h2>
+          <p class="section-sub">Conceptual redesign demonstration — not a real restaurant transformation.</p>
+        </div>
+
+        <div class="ba-wrap reveal">
+          <div class="ba-slider" id="baSlider">
+            <div class="ba-before">
+              <span class="ba-tag">Before</span>
+              <div class="ba-before-body">
+                <div class="ba-before-header">Restaurant</div>
+                <div class="ba-before-line"></div>
+                <div class="ba-before-line short"></div>
+                <div class="ba-before-line"></div>
+                <div class="ba-before-btn">Click here</div>
+              </div>
+            </div>
+            <div class="ba-after" id="baAfter">
+              <span class="ba-tag ba-tag-after">After</span>
+              <div class="ba-after-body">
+                <span class="ba-after-eyebrow">EST. 2026 • FIRE-DRIVEN</span>
+                <h3 class="ba-after-title">FIRE. FLAVOR.<br />NO APOLOGIES.</h3>
+                <span class="ba-after-btn">Reserve a Table</span>
+              </div>
+            </div>
+            <div class="ba-handle" id="baHandle">
+              <div class="ba-handle-line"></div>
+              <div class="ba-handle-knob">↔</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AGENCY CASE STUDY MODE ============ -->
+    <section class="section agency-case" id="agency-case">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Portfolio case study</span>
+          <h2 class="section-title">WHY WE DESIGNED IT THIS WAY.</h2>
+        </div>
+
+        <div class="agency-case-grid">
+          <div class="agency-case-card reveal">
+            <span class="agency-case-num">01</span>
+            <h3>The Goal</h3>
+            <p>Turn a restaurant website into a reservation-driving brand experience.</p>
+          </div>
+          <div class="agency-case-card reveal">
+            <span class="agency-case-num">02</span>
+            <h3>The Strategy</h3>
+            <p>Lead with atmosphere, then food, then experience, then reservation.</p>
+          </div>
+          <div class="agency-case-card reveal">
+            <span class="agency-case-num">03</span>
+            <h3>The Design</h3>
+            <p>Dark editorial visual system inspired by fire and hospitality.</p>
+          </div>
+          <div class="agency-case-card reveal">
+            <span class="agency-case-num">04</span>
+            <h3>The UX</h3>
+            <p>Minimize friction between discovering the restaurant and requesting a table.</p>
+          </div>
+        </div>
+
+        <div class="agency-credit reveal">
+          <p>Website concept by <a href="#" class="agency-credit-link">Scriptll's Agency</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <h2 class="footer-brand">EMBER &amp; OAK</h2>
+        <p class="footer-tagline">FIRE. FLAVOR. NO APOLOGIES.</p>
+      </div>
+
+      <div class="footer-grid">
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#menu">Menu</a>
+          <a href="#story">Our Story</a>
+          <a href="#experience">Experience</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+          <a href="#reserve">Reserve</a>
+        </nav>
+
+        <div class="footer-social" aria-label="Social media">
+          <a href="#" rel="noopener">Instagram</a>
+          <a href="#" rel="noopener">Facebook</a>
+          <a href="#" rel="noopener">TikTok</a>
+        </div>
+
+        <div class="footer-reserve">
+          <a href="#reserve" class="footer-reserve-btn">Reserve a Table</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-disclosure">Concept restaurant website designed by Scriptll's Agency.</p>
+        <p class="footer-copy">© 2026 EMBER &amp; OAK — CONCEPT PROJECT</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE BOTTOM BAR -->
+  <div class="mobile-bar" id="mobileBar" aria-hidden="true">
+    <button class="mobile-bar-btn" id="mobileBarMenu">Menu</button>
+    <a href="#reserve" class="mobile-bar-btn mobile-bar-primary">Reserve</a>
+  </div>
+
+  <!-- ============ MENU MODAL ============ -->
+  <div class="modal" id="menuModal" role="dialog" aria-modal="true" aria-labelledby="menuModalTitle" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <span class="modal-brand" id="menuModalTitle">EMBER &amp; OAK — MENU</span>
+        <button class="modal-close" id="menuModalClose" aria-label="Close menu">✕</button>
+      </div>
+      <div class="modal-categories" id="menuCategories" role="tablist">
+        <button class="cat-btn active" data-cat="starters" role="tab" aria-selected="true">Starters</button>
+        <button class="cat-btn" data-cat="fire" role="tab" aria-selected="false">From the Fire</button>
+        <button class="cat-btn" data-cat="sea" role="tab" aria-selected="false">Sea</button>
+        <button class="cat-btn" data-cat="veg" role="tab" aria-selected="false">Vegetables</button>
+        <button class="cat-btn" data-cat="sides" role="tab" aria-selected="false">Sides</button>
+        <button class="cat-btn" data-cat="dessert" role="tab" aria-selected="false">Dessert</button>
+        <button class="cat-btn" data-cat="cocktails" role="tab" aria-selected="false">Cocktails</button>
+      </div>
+      <div class="modal-menu" id="menuContent">
+        <!-- Filled by JS -->
+      </div>
+      <div class="modal-foot">
+        <span>Concept menu for demonstration purposes.</span>
+        <a href="#reserve" class="btn btn-primary" id="modalReserve">Reserve a Table</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ GALLERY LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close gallery">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+    <div class="lightbox-inner">
+      <img id="lightboxImg" src="" alt="" />
+      <span class="lightbox-caption" id="lightboxCaption"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
