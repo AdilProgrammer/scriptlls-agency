@@ -202,7 +202,7 @@
       phoneLogo: "E&O",
       phoneText: "FIRE.<br>FLAVOR.",
       phoneCta: "RESERVE",
-      websiteLocation: "/demo/ember-and-oak/index.html",
+      websiteLocation: "./demo/ember-and-oak/index.html",
     },
     "nova-dental": {
       name: "NOVA DENTAL",
@@ -225,7 +225,7 @@
       phoneLogo: "NOVA",
       phoneText: "Smile<br>confidently.",
       phoneCta: "BOOK",
-      websiteLocation: "./demo/nova-dental/index.html",
+      websiteLocation: "/demo/nova-dental/index.html",
     },
     "north-co": {
       name: "NORTH & CO.",
@@ -248,7 +248,7 @@
       phoneLogo: "N&Co",
       phoneText: "Find your<br>next.",
       phoneCta: "VIEW",
-      websiteLocation: "./demo/north-co/index.html",
+      websiteLocation: "demo/north-co/index.html",
     },
     "forge-athletics": {
       name: "FORGE ATHLETICS",
