@@ -202,7 +202,7 @@
       phoneLogo: "E&O",
       phoneText: "FIRE.<br>FLAVOR.",
       phoneCta: "RESERVE",
-      websiteLocation: "./demo/ember-and-oak/index.html",
+      websiteLocation: "/demo/ember-and-oak/index.html",
     },
     "nova-dental": {
       name: "NOVA DENTAL",
