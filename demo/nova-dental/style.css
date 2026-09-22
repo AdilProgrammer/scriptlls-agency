@@ -2042,7 +2042,6 @@ ul { list-style: none; }
   .modal-cta { flex-direction: column; align-items: stretch; }
   .modal-cta .btn { width: 100%; }
 
-  body { padding-bottom: 68px; }
 }
 
 /* 480 */
