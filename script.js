@@ -225,7 +225,7 @@
       phoneLogo: "NOVA",
       phoneText: "Smile<br>confidently.",
       phoneCta: "BOOK",
-      websiteLocation: "/demo/nova-dental/index.html",
+      websiteLocation: "demo/nova-dental/index.html",
     },
     "north-co": {
       name: "NORTH & CO.",
