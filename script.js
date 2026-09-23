@@ -375,7 +375,7 @@
         </div>
         <div class="modal-cta">
           <p>This is a concept build created by Scriptll's Agency to demonstrate design direction. It is not a real client project.</p>
-          <a href="${p.websiteLocation}" class="btn btn-primary" id="modalCtaBtn">Start a Project</a>
+          <a href="${p.websiteLocation}" class="btn btn-primary" id="modalCtaBtn">Open the Project</a>
         </div>
       </div>
     `;
